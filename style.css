@@ -1,0 +1,126 @@
+/*
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+*/
+
+body{
+    background-color: #002b36;
+    font-family: Consolas, sans-serif;
+}
+
+#header{
+    background-color: #073642;
+    color: #2aa198;
+    text-align: center;
+    padding: 10px;
+}
+
+#container{
+    background-color: #073642;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{
+    padding: 0px;
+}
+
+#nav{
+    width: 80px;
+    float: right;
+}
+
+#search{
+    width: 350px;
+    float: left;
+}
+
+#credits{
+    width: 700px;
+    float: left;
+}
+
+
+.selected{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #b58900;
+}
+
+/*Nawigacja*/
+#nav ul{
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+}
+
+/*Searchbar*/
+#search ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+#search button{
+}
+
+/*Creditsy*/
+#credits ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+#searchform input{
+    background-color: #073642;
+    color: #93a1a1;
+    width: 300px;
+}
+
+#searchform{
+    border: #002b36; 
+    border-radius: 1px;
+}
+
+h1{
+    margin: 0;
+    color: #2aa198;
+}
+
+h2{
+    color: #93a1a1;
+}
+
+#footer{
+    clear: both;
+    padding: 10px;
+    background-color: #073642;
+    color: #2aa198;
+    text-align: left;
+}
+
+#about{
+    color: #2aa198;
+}
+
+.credit{
+    color: #2aa198;
+}
