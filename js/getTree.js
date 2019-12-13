@@ -1,7 +1,7 @@
-$(function() {
+function getTree() {
 
   $.ajax({
-      url: "piterurl",
+      url: "",
       dataType: "json",
       success: function (data) {
           var str = JSON.stringify(data);
@@ -27,5 +27,16 @@ $(function() {
       return str.replace(new RegExp(find, 'g'), replace);
   }
 
-});
+}
+
+function pingApi(){
+
+   $.ajax({
+      url: "",
+      dataType: "json",
+      success: function (data) {
+          window.alert("SUCCESS, mejbi");
+      }
+  });   
+}
 
