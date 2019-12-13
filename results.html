@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>ICD article database</title>
+   <title>ICD article database</title>
 
-    <link rel="shortcut icon" href="images/logo.ico"/>
+   <link rel="shortcut icon" href="images/logo.ico"/>
 
    <link rel="icon" type="image/gif" href="images/animated_logo.gif"/>
 
    <link rel="stylesheet" type="text/css" href="style.css"/>
 
-   <!--DŻAWASKRIPTS-->
-   <script src="js/getTree.js"></script>
+    <!--DŻAWASKRIPTS-->
+   <script src="js/gotoSearch.js"></script>
 
 </head>
 <body>
@@ -27,8 +27,8 @@
             <div id="search">
                 <ul>
                 <li><h2>Search results</h2></li>
-                <li><form id="searchform"><input type="text"></form></li>
-                <li><input type="button" onclick="location.href='results.html';" value="Search!"/></input></li>
+                <li><form id="searchform"><input type="text" name="disease" id="searchfield"></form></li>
+                <li><input type="button" onclick="gotoSearch()" value="Search!"/></input></li>
 
                 </ul>
             </div>
