@@ -1,17 +1,22 @@
-function getTree() {
+function getSearchText(){
+
+    var searchtext = document.getElementById("searchfield").value;
+    return searchtext;
+}
+
+
+function getTree(searchtext) {
 
   $.ajax({
-      url: "",
+      url: "https://apiicd.herokuapp.com/",
       dataType: "json",
       success: function (data) {
           var str = JSON.stringify(data);
 
-          str = replaceAll(str,"label", "text");
-          str = replaceAll(str,"nested", "children");
 
           data = JSON.parse(str);
           console.log(data);
-          createJSTree(data);
+        //   createJSTree(data);
       }
   });
 
