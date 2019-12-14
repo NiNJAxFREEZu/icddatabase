@@ -1,23 +1,48 @@
-function gotoSearch(){
+function GotoSearch(){
 
     var searchtext = document.getElementById("searchfield").value;
     location.href='results.html?search=' + searchtext;
 }
 
-function displaySearchText(){
+function DisplaySearchText(){
     var qs = new Querystring();
     var searchtext = qs.get("search");
 }
 
-function parseSearch(){
+function ParseSearch(){
 
     var icd, disease;    
 }
 
 function PingApi()
 {
-    var response = API_REQUEST_ASYNC("https://apiicd.herokuapp.com/api/ICD/test");
-    console.log(response);
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            //CALLBACK
+            window.alert(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", "https://apiicd.herokuapp.com/api/ICD/test", true);
+    xmlHttp.send(null);
+}
+
+function SearchDisease(icd, name)
+{
+    var url = "https://apiicd.herokuapp.com/api/ICD?ICD11=" + icd;
+    /*?name=" + name + "*/    
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            //CALLBACK
+            window.alert(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+}
+
+function DownloadDatabase()
+{
+    location.href="https://apiicd.herokuapp.com/api/ICD/wholeDb";
 }
 
 function API_REQUEST(url)

@@ -1,47 +1,13 @@
-function getSearchText(){
+function GetSearchText(){
 
     var searchtext = document.getElementById("searchfield").value;
     return searchtext;
 }
 
+function GetTree(searchtext) {
+    var searchtext = GetSearchText();
+    var icd = "MB47";
+    var name = "abnormal";
 
-function getTree(searchtext) {
-
-  $.ajax({
-      url: "https://apiicd.herokuapp.com/",
-      dataType: "json",
-      success: function (data) {
-          var str = JSON.stringify(data);
-
-
-          data = JSON.parse(str);
-          console.log(data);
-        //   createJSTree(data);
-      }
-  });
-
-  function createJSTree(jsondata) {
-      $('#tree').jstree({
-          'core': {
-              'data': jsondata
-          }
-      });
-  }
-
-  function replaceAll(str, find, replace) {
-      return str.replace(new RegExp(find, 'g'), replace);
-  }
-
+    SearchDisease(icd, name);
 }
-
-function pingApi(){
-
-   $.ajax({
-      url: "",
-      dataType: "json",
-      success: function (data) {
-          window.alert("SUCCESS, mejbi");
-      }
-  });   
-}
-
