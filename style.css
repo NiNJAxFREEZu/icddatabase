@@ -46,7 +46,7 @@ body{
 }
 
 #search{
-    width: 350px;
+    width: 600px;
     float: left;
 }
 
@@ -79,14 +79,15 @@ a{
     padding: 0;
 }
 
-#search button{
-}
-
 /*Creditsy*/
 #credits ul{
     text-decoration: none;
     list-style: none;
     padding: 0;
+}
+
+#credits p{
+    color: #2aa198;
 }
 
 #searchform input{
@@ -122,5 +123,5 @@ h2{
 }
 
 .credit{
-    color: #2aa198;
+    color: #b58900;
 }

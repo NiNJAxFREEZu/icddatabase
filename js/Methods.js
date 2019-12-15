@@ -20,7 +20,7 @@ function PingApi()
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             //CALLBACK
-            window.alert(xmlHttp.responseText);
+            console.log(xmlHttp.responseText);
     }
     xmlHttp.open("GET", "https://apiicd.herokuapp.com/api/ICD/test", true);
     xmlHttp.send(null);
