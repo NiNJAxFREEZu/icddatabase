@@ -28,7 +28,7 @@ function PingApi()
 
 function DownloadDatabase()
 {
-    location.href="https://apiicd.herokuapp.com/api/ICD/wholeDb";
+    location.href="https://apiicd.herokuapp.com/api/ICD/wholeDbOWL";
 }
 
 function API_REQUEST(url)
