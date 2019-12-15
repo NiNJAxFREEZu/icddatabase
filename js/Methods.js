@@ -26,20 +26,6 @@ function PingApi()
     xmlHttp.send(null);
 }
 
-function SearchDisease(icd, name)
-{
-    var url = "https://apiicd.herokuapp.com/api/ICD?ICD11=" + icd;
-    /*?name=" + name + "*/    
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            //CALLBACK
-            window.alert(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send(null);
-}
-
 function DownloadDatabase()
 {
     location.href="https://apiicd.herokuapp.com/api/ICD/wholeDb";
