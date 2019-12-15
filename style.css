@@ -48,6 +48,7 @@ body{
 #search{
     width: 600px;
     float: left;
+    text-align: justify;
 }
 
 #credits{
