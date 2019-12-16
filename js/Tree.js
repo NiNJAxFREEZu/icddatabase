@@ -8,11 +8,10 @@ function GetSearchText(){
 
 function SearchDisease(icd, name)
 {
-    //Building URL
     var url;
 
     if(name == null)
-        url = "https://apiicd.herokuapp.com/api/ICD?ICD11=" + icd;
+        url = "https://apiicd.herokuapp.com/api/ICD?ICD11=" + icd();
    
     if(icd == null)
         url = "https://apiicd.herokuapp.com/api/ICD?name=" + name;
