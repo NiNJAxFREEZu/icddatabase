@@ -8,7 +8,7 @@ User can send querries to the database via asynchronous AJAX request. On the hom
 If there are no hits the JSON tree will not be displayed. (nor the information of the unsuccessful search)
 
 ## Download the database for Protege
-
+User can request the database to parse it's tables into a .owl Protege format file. To do so simply click the __Download__ button at the *Download* page. Parsing is done every time a user requests it, so he always gets the newest version of the database. An asynchronous AJAX request is sent and the parser starts building the file. Upon completion API responds with the file for the user to download. After a couple of seconds after the button press the file should start to download. 
 
 ## TODO
 1. Better search text recognition
