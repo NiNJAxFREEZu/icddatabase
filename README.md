@@ -1,4 +1,6 @@
 # ICD-11 Database website
+[Page avaiable here](https://ninjaxfreezu.github.io/icddatabase/)
+
 Website frontend to ICD-11 database which allows to query the database with ICD code or disease name to receive it's Wikipedia article link. The website also allows to download the entire database in Protege .owl file format.
 
 ## TODO
